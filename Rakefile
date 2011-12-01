@@ -5,6 +5,7 @@ require "stringex"
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
 ssh_user       = "colingourlay@colingourlay.webfactional.com"
+ssh_port       = 22
 document_root  = "~/webapps/octopress/"
 deploy_default = "rsync"
 
