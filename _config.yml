@@ -4,7 +4,7 @@
 
 url: http://blog.colin-gourlay.com
 title: Colin Gourlay
-subtitle: The Blog
+subtitle: Web developer and insult swordfighter
 author: Colin Gourlay
 simple_search: http://google.com/search
 
@@ -18,7 +18,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+email: colin.j.gourlay@gmail.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
