@@ -116,16 +116,16 @@ Here's a quick example of how to use the scripts, followed by the console output
 	<body>
 		<script>
 			$(document).bind("ready", function () {
-				console.log("Example D: $(document).bind(\"ready\", handler);"
-			)});
+				console.log("Example D: $(document).bind(\"ready\", handler)");
+			});
 			$(document).ready(function () {
-				console.log("Example A: $(document).ready(handler);")
+				console.log("Example A: $(document).ready(handler)");
 			});
 			$().ready(function () {
-				console.log("Example B: $().ready(handler);")
+				console.log("Example B: $().ready(handler)");
 			});
 			$(function(){
-				console.log("Example C: $(handler);")
+				console.log("Example C: $(handler)");
 			});
 		</script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -134,11 +134,11 @@ Here's a quick example of how to use the scripts, followed by the console output
 </html>
 ```
 
-``` js Example console output
-Example A: $(document).ready(handler);
-Example B: $().ready(handler);
-Example C: $(handler);
-Example D: $(document).bind("ready", handler);
+``` text Example console output
+Example A: $(document).ready(handler)
+Example B: $().ready(handler)
+Example C: $(handler)
+Example D: $(document).bind("ready", handler)
 ```
 
 Note that even though *Example D* is the first example, it uses `$(document).bind("ready", handler)`, so it is queued separately, and is executed after the other three examples. It behaves exactly as jQuery intends.
