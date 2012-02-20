@@ -13,3 +13,16 @@ body > header {
 body > header h1 {
   font-family: $serif;
 }
+
+body > nav {
+	@include background(lighten(#538CA3, 15));
+	form .search {
+		@include border-radius(0);
+		background-color: #FFF;
+		line-height: 1.3em;
+	}
+}
+
+body > footer {
+	@include background(lighten(#538CA3, 15));
+}
