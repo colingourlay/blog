@@ -8,6 +8,8 @@ categories: JavaScript jQuery DOM
 
 Earlier today, I read [Stop paying your jQuery tax](http://samsaffron.com/archive/2012/02/17/stop-paying-your-jquery-tax), an excellent article by [Sam Saffron](http://samsaffron.com/) which explains why it's a great idea to move all of your external JavaScripts to the bottom of the HTML document (just before the closing `body` tag). Near the end of the article, he proposes a method which allows you to continue to use jQuery's DOM ready method anywhere in your document, even though you've moved jQuery itself to the bottom. His method is essentially this:
 
+<!-- more -->
+
 * In the `head`, include a script that:
   1. Defines an array
   2. Creates a _fake_ `$` function that pushes its argument to the array
