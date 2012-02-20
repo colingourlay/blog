@@ -26,3 +26,19 @@ body > nav {
 body > footer {
 	@include background(lighten(#538CA3, 15));
 }
+
+img.profile {
+	margin-top: 36px;
+  -webkit-filter: sepia(75%);
+  -webkit-transition: -webkit-filter 1s;
+}
+
+@media only screen and (min-width: 992px) {
+	img.profile {
+		margin-top: 21px;
+	}
+}
+
+img.profile:hover {
+  -webkit-filter: sepia(0%);  
+}
