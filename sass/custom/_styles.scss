@@ -2,41 +2,54 @@
 // Add styles here to make changes without digging in too much
 
 html {
-	background: #252525;
+  background: #252525;
+}
+
+#{headings()}{
+  @include text-shadow(1px 1px 0 #FFF, -1px -1px 0 #FFF, 2px 2px 2px #333);
+}
+
+article header h1 a:hover {
+  text-decoration: none;
 }
 
 body > header {
-	@include background(linear-gradient(rgb(241,74,41),#A41B00));
+  @include background(linear-gradient(rgb(241,74,41),#A41B00));
   text-align: center;
 }
 
 body > header h1 {
   font-family: $serif;
+  @include text-shadow(none);
+}
+
+body > header h2 {
+  @include text-shadow(none);
 }
 
 body > nav {
-	@include background(lighten(#538CA3, 15));
-	form .search {
-		@include border-radius(0);
-		background-color: #FFF;
-		line-height: 1.3em;
-	}
+  @include background(lighten(#538CA3, 15));
+  form .search {
+    @include border-radius(0);
+    background-color: #FFF;
+    line-height: 1.3em;
+  }
 }
 
 body > footer {
-	@include background(lighten(#538CA3, 15));
+  @include background(lighten(#538CA3, 15));
 }
 
 img.profile {
-	margin-top: 36px;
+  margin-top: 36px;
   -webkit-filter: sepia(75%);
   -webkit-transition: -webkit-filter 1s;
 }
 
 @media only screen and (min-width: 992px) {
-	img.profile {
-		margin-top: 21px;
-	}
+  img.profile {
+    margin-top: 21px;
+  }
 }
 
 img.profile:hover {
