@@ -15,7 +15,6 @@ article header h1 a:hover {
 
 body > header {
   @include background(linear-gradient(rgb(241,74,41),#A41B00));
-  text-align: center;
 }
 
 body > header h1 {
