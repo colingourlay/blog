@@ -3,6 +3,8 @@
 .sass-cache
 .gist-cache
 .pygments-cache
+*.sublime-project
+*.sublime-workspace
 _deploy
 public
 sass.old
